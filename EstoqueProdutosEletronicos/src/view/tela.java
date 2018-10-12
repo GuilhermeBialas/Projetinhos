@@ -100,6 +100,11 @@ public class tela extends javax.swing.JFrame {
 
         jButtonSalvar.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jButtonSalvar.setText("Salvar");
+        jButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSalvarActionPerformed(evt);
+            }
+        });
 
         jButtonExcluir.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jButtonExcluir.setText("Excluir");
@@ -182,6 +187,10 @@ public class tela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldIdActionPerformed
 
+    private void jButtonSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalvarActionPerformed
+
+    }//GEN-LAST:event_jButtonSalvarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -215,6 +224,30 @@ public class tela extends javax.swing.JFrame {
                 new tela().setVisible(true);
             }
         });
+    }
+    
+    private void bordaSucesso() {
+
+    }
+
+    private void bordaErro() {
+
+    }
+
+    private void limparCampos() {
+        jTextFieldNome.setText("");
+        jTextFieldPeso.setText("");
+        jTextFieldQuantidade.setText("");
+        jTextFieldId.setText("");
+        jComboBoxCategoria.setSelectedIndex(-1);
+    }
+
+    private void validacao() {
+        //nome
+        if (jTextFieldNome.getText().isEmpty()) {
+
+        } else {
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
